@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Supplies Bulk Price List - Mahaveer Surgical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact; /* Ensures background colors are printed */
+            print-color-adjust: exact;
+        }
+        @media print {
+            body {
+                background-color: #fff;
+            }
+            .no-print {
+                display: none;
+            }
+            .page-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+        .watermark-container::after {
+            content: "MAHAVEER SURGICAL";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 6rem; /* 96px */
+            font-weight: 800;
+            color: rgba(229, 231, 235, 0.5); /* gray-200 with opacity */
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+        <!-- Print button -->
+        <div class="text-center mb-4 no-print">
+            <button onclick="window.print()" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                Print Price List
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-2xl overflow-hidden max-w-4xl mx-auto page-container">
+            <!-- Header Section -->
+            <div class="p-8 border-b-4 border-blue-600">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h1 class="text-4xl font-extrabold text-gray-800">MAHAVEER SURGICAL</h1>
+                        <p class="text-gray-500 mt-1">High-Quality Medical & Surgical Supplies</p>
+                    </div>
+                    <div class="text-right">
+                         <p class="font-semibold text-gray-700">Phone: 6392598779</p>
+                         <p class="font-semibold text-gray-700">WhatsApp: 6392598779</p>
+                         <p class="text-sm text-gray-500">Kanpur,India</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <div class="p-6 text-center">
+                 <h2 class="text-3xl font-bold text-blue-700">Bulk Order Price List</h2>
+                 <p class="text-gray-500">Effective Date: September 17, 2025</p>
+                 <p class="text-gray-600 mt-1 font-medium">All prices listed are wholesale for bulk purchases.</p>
+            </div>
+            
+            <!-- Products Table -->
+            <div class="p-8 relative watermark-container">
+                <div class="overflow-x-auto relative z-10">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="p-4 text-sm font-semibold text-gray-700 uppercase tracking-wider">Product</th>
+                                <th class="p-4 text-sm font-semibold text-gray-700 uppercase tracking-wider text-right">Price per Piece (Bulk)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200">
+                                <td class="p-4 text-gray-800 font-medium">Arm Pouch</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹70</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="p-4 text-gray-800 font-medium">Clavicle Support</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹100</td>
+                            </tr>
+                             <tr class="border-b border-gray-200">
+                                <td class="p-4 text-gray-800 font-medium">Thumb Spica</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹60</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="p-4 text-gray-800 font-medium">Wrist Brace</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹250</td>
+                            </tr>
+                             <tr class="border-b border-gray-200">
+                                <td class="p-4 text-gray-800 font-medium">Wrist Band</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹40</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="p-4 text-gray-800 font-medium">Tennis Elbow Support</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹40</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="p-4 text-gray-800 font-medium">Knee Brace</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹325</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="p-4 text-gray-800 font-medium">LS Belt</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹250</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="p-4 text-gray-800 font-medium">Rib Belt</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹130</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="p-4 text-gray-800 font-medium">Taylor Brace</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹600</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="p-4 text-gray-800 font-medium">Shoulder Immobilizer</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹200</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 bg-gray-50">
+                                <td class="p-4 text-gray-800 font-medium">Soft Collar</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹110</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 text-gray-800 font-medium">Finger Cot</td>
+                                <td class="p-4 text-gray-600 font-mono text-right">₹40</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Footer Section -->
+            <div class="bg-gray-100 p-6 mt-8">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-bold text-gray-700">Terms & Conditions:</h4>
+                        <ul class="list-disc list-inside text-xs text-gray-600 mt-2 space-y-1">
+                            <li>Prices are subject to change without prior notice.</li>
+                            <li>GST will be applicable as per government norms.</li>
+                            <li>Minimum order quantities (MOQ) apply. Please contact us for details.</li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-48 h-12 border-b-2 border-gray-400"></div>
+                        <p class="text-sm font-semibold text-gray-600 mt-2">Authorized Signatory</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
