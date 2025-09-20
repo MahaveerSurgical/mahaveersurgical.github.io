@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Supplies Bulk Price List - Mahaveer Surgical</title>
+  <title>Medical Supplies Bulk Price List </title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -60,9 +60,9 @@
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
       <h1 class="text-xl font-bold text-blue-700">Mahaveer Surgical</h1>
       <div class="space-x-6 font-medium">
-        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="index.html" class="hover:text-blue-600">Home</a>
         <a href="#pricelist" class="hover:text-blue-600">Price List</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
+        <a href="contactform.html" class="hover:text-blue-600">Contact</a>
         <button onclick="window.print()" class="bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-700">
           Print Price List
         </button>
@@ -145,25 +145,6 @@
     </div>
   </div>
 
-<!-- Contact Form Section -->
-<section id="contact" class="bg-gray-100 py-12">
-  <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-    <form id="contact-form" onsubmit="sendMail(event)" class="space-y-4 text-left max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
-      <input type="text" id="name" name="user_name" placeholder="Your Name" required class="w-full border rounded-lg p-3">
-      <input type="email" id="email" name="user_email" placeholder="Your Email" required class="w-full border rounded-lg p-3">
-      <input type="tel" id="phone" name="phone" placeholder="Your Phone" class="w-full border rounded-lg p-3">
-      <textarea id="message" name="message" placeholder="Your Message" rows="4" required class="w-full border rounded-lg p-3"></textarea>
-      <input type="hidden" id="time" name="time" value="">
-      <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
-        Send Message
-      </button>
-    </form>
-  </div>
-</section>
-
-<!-- EmailJS Script -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function() {
     emailjs.init("AV3h8pejUn9Ce9_2N"); // Replace with your EmailJS public key
@@ -182,8 +163,8 @@
     document.getElementById("time").value = timestamp;
 
     emailjs.sendForm(
-      "service_jnmc0ua",   // Replace with your EmailJS service ID
-      "template_ybvg95h",  // Replace with your EmailJS template ID
+      "service_jnmc0ua",
+      "template_ybvg95h",
       form
     ).then(() => {
         alert("✅ Message sent successfully!");
@@ -193,7 +174,7 @@
         alert("❌ Failed to send message. Please try again later.");
       });
   }
-</script>
+</script> -->
 
   <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/916392598779" target="_blank" class="whatsapp-float no-print">
